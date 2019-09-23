@@ -8,6 +8,13 @@ app.set('port', process.env.PORT || 4000);
 
 // Middlware
 
+// Writing a custom middleware
+app.use((req, res, next) => {
+	console.log(`${new Date().toString()} => ${req.originalUrl}`)
+
+	// If this is not run it breaks the chain of middleware
+	next();
+})
 
 app.use(morgan('combined'))
 app.use('/api', personRoute)
