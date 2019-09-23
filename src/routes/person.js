@@ -23,5 +23,8 @@ router.get('/person/:name', (req, res) => {
 	res.send(`You have requested a person with name ${req.params.name}`)
 })
 
+router.get('/error', (req, res) => {
+	throw new Error('This is a forced error.');
+})
 // This allows us to import the router in index.js 
 module.exports = router;
