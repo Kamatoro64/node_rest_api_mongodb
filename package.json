@@ -1,0 +1,11 @@
+{
+  "name": "node_rest_api_mongodb",
+  "version": "1.0.0",
+  "description": "RESTful API suing Node, Express and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
